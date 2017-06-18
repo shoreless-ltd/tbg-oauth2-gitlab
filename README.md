@@ -2,8 +2,15 @@
 
 ## Description
 
-This is a module for The Bug Genie issue tracker. It allows authenticating The Bug
-Genie users using a GitLab OAuth2 provider.
+This is an authentication  module for [The Bug Genie](https://github.com/thebuggenie/thebuggenie)
+issue tracker. It allows authenticating The Bug Genie users against GitLab as OAuth2 provider.  
+
+
+## Requirements
+
+  * A running [The Bug Genie](https://github.com/thebuggenie/thebuggenie) installation, v4.2+
+  * A running [GitLab](https://about.gitlab.com/) installation, v8.17+
+  * PHP 5.6+
 
 
 ## Installation
@@ -12,18 +19,23 @@ Genie users using a GitLab OAuth2 provider.
 
 Clone this repository either straight into a folder under `thebuggenie/modules/oauth2_gitlab`,
 or symlink it to the same folder (IMPORTANT: The folder name under thebuggenie/modules
-MUST be `oauth2_gitlab`, as this MUST match the module name). 
+MUST be `oauth2_gitlab`, as this MUST match the module name):
+
+<code>
+cd thebuggenie/modules  
+git clone git@github.com:shoreless-ltd/tbg-oauth2-gitlab.git oauth2_gitlab  
+</code>
 
 ### 2: Install Composer Dependencies
 
 This module uses the [omines/oauth2-gitlab](https://packagist.org/packages/omines/oauth2-gitlab)
 composer package, which must be installed after you installed the module to The Bug Genie.  
 
-Navigate to the `thebuggenie/modules/oauth2_gitlab` folder and install the composer dependencies
-executing the follwing command:  
+Navigate to the `thebuggenie/modules/oauth2_gitlab` folder and install the composer dependencies:  
 
 <code>
-composer install
+cd thebuggenie/modules/oauth2_gitlab  
+composer install  
 </code>
 
 ### 3: Activate the Module
