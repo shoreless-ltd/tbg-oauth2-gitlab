@@ -1,0 +1,6 @@
+configure_oauth2_gitlab_settings:
+  route: /configure/oauth2_gitlab
+  action: configureSettings
+  parameters:
+    config_module: core
+    section: 15

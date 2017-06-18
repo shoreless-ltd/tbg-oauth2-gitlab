@@ -1,0 +1,28 @@
+{
+    "name": "shoreless/oauth2_gitlab",
+    "description": "Adds Gitlab as a OAuth2 authentication provider to The Bug Genie.",
+    "type": "library",
+    "license": "MPL 2.0",
+    "authors": [
+        {
+            "name": "Andreas W. Wylach",
+            "email": "andreas.wylach@shoreless.limited",
+            "homepage": "https://shoreless.limited",
+            "role": "Developer"
+        },
+        {
+            "name": "Mario Steinitz",
+            "email": "mario.steinitz@shoreless.limited",
+            "homepage": "https://shoreless.limited",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "contact@shoreless.limited",
+        "issues": "https://github.com/shoreless-ltd/tbg-oauth2-gitlab/issues",
+        "source": "https://github.com/shoreless-ltd/tbg-oauth2-gitlab"
+    },
+    "require": {
+        "omines/oauth2-gitlab": "^3.0"
+    }
+}
