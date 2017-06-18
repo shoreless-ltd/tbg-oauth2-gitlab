@@ -30,7 +30,7 @@ composer install
 
 You can now enable the module from the configuration section in The Bug Genie.
 
-### 4: Configure a GitLab / The Bug Genie
+### 4: Configure GitLab / The Bug Genie
 
 After activating the module, head over to the GitLab OAuth2 settings in The Bug Genie to setup the
 application key and secret, as well as the GitLab instance you like to authenticate against.
@@ -40,5 +40,5 @@ To generate an application key and secret, follow the instructions under [Adding
 
 ## Reporting issues
 
-If you find any issues, please report them in the issue tracker on our website:
+If you find any issues, please report them in the issue tracker:
 https://github.com/shoreless-ltd/tbg-oauth2-gitlab/issues
