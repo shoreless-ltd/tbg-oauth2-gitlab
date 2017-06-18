@@ -21,10 +21,10 @@ Clone this repository either straight into a folder under `thebuggenie/modules/o
 or symlink it to the same folder (IMPORTANT: The folder name under thebuggenie/modules
 MUST be `oauth2_gitlab`, as this MUST match the module name):
 
-<code>
-cd thebuggenie/modules  
-git clone git@github.com:shoreless-ltd/tbg-oauth2-gitlab.git oauth2_gitlab  
-</code>
+<pre>
+cd thebuggenie/modules
+git clone git@github.com:shoreless-ltd/tbg-oauth2-gitlab.git oauth2_gitlab
+</pre>
 
 ### 2: Install Composer Dependencies
 
@@ -33,10 +33,10 @@ composer package, which must be installed after you installed the module to The 
 
 Navigate to the `thebuggenie/modules/oauth2_gitlab` folder and install the composer dependencies:  
 
-<code>
-cd thebuggenie/modules/oauth2_gitlab  
-composer install  
-</code>
+<pre>
+cd thebuggenie/modules/oauth2_gitlab
+composer install
+</pre>
 
 ### 3: Activate the Module
 
