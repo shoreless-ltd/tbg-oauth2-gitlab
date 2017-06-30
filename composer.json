@@ -1,7 +1,7 @@
 {
     "name": "shoreless/oauth2_gitlab",
     "description": "Adds Gitlab as a OAuth2 authentication provider to The Bug Genie.",
-    "type": "library",
+    "type": "thebuggenie/module",
     "license": "MPL 2.0",
     "authors": [
         {
