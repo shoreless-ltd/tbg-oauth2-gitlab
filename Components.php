@@ -1,27 +1,35 @@
 <?php
 
-    namespace thebuggenie\modules\oauth2_gitlab;
+namespace thebuggenie\modules\oauth2_gitlab;
 
-    use thebuggenie\core\framework;
+use thebuggenie\core\framework\ActionComponent;
+use thebuggenie\core\framework\Context;
+
+/**
+ * Component preprocessing of the GitLab OAuth2 module.
+ *
+ * @author SHORELESS Limited <mailto:contact@shoreless.limited>
+ * @license http://opensource.org/licenses/MPL-2.0 Mozilla Public License 2.0 (MPL 2.0)
+ * @package thebuggenie
+ * @subpackage oauth2-gitlab
+ * @category component
+ */
+class Components extends ActionComponent
+{
 
     /**
-     * actions for the oauth2_gitlab module
+     * Settings component
      */
-    class Components extends framework\ActionComponent
+    public function componentSettings()
     {
+        $settings = Oauth2_gitlab::getModule()->getSettings();
+        $this->domain = ! empty($settings['domain']) ? $settings['domain'] : '';
+        $this->client_id = ! empty($settings['client_id']) ? $settings['client_id'] : '';
+        $this->client_secret = ! empty($settings['client_secret']) ? $settings['client_secret'] : '';
 
-        public function componentSettings()
-        {
-            $settings = Oauth2_gitlab::getModule()->getSettings();
-            $this->domain = ! empty($settings['domain']) ? $settings['domain'] : '';
-            $this->client_id = ! empty($settings['client_id']) ? $settings['client_id'] : '';
-            $this->client_secret = ! empty($settings['client_secret']) ? $settings['client_secret'] : '';
-            //$this->btn_label = ! empty($settings['btn_label']) ? $settings['btn_label'] : '';
-
-            if (framework\Context::hasMessage('oauth2_gitlab_settings_saved')) {
-                $this->settings_saved = framework\Context::getMessageAndClear('oauth2_gitlab_settings_saved');
-            }
+        if (Context::hasMessage('oauth2_gitlab_settings_saved')) {
+            $this->settings_saved = Context::getMessageAndClear('oauth2_gitlab_settings_saved');
         }
-
     }
 
+}

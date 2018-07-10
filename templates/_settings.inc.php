@@ -42,10 +42,6 @@
                 <label><?= __('Client Secret'); ?></label>
                 <input type="text" name="client_secret" value="<?= $client_secret; ?>">
             </li>
-<?php /*            <li>
-                <label><?= __('Login Button Label'); ?></label>
-                <input type="text" name="btn_label" placeholder="Use GitLab" value="<?= $btn_label; ?>">
-            </li> */ ?>
         </ul>
         <input type="submit" class="button" value="<?= __('Save'); ?>">
     </form>
